@@ -14,7 +14,7 @@ export default function Hero() {
   priority
   className="object-cover object-center md:object-left"
 />
-/>
+
 
       {/* Overlay (dark + red gradient like Figma) */}
       <div className="absolute inset-0 bg-gradient-to-r from-black/70 md:from-black/60 via-black/50 to-red-900/60" />
