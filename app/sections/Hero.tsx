@@ -12,7 +12,8 @@ export default function Hero() {
   alt="Background"
   fill
   priority
-  className="object-cover"
+  className="object-cover object-center md:object-left"
+/>
 />
 
       {/* Overlay (dark + red gradient like Figma) */}
