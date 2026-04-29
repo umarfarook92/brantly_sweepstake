@@ -16,12 +16,12 @@ export default function Hero() {
 />
 
       {/* Overlay (dark + red gradient like Figma) */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-red-900/50" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/70 md:from-black/60 via-black/50 to-red-900/60" />
 
       {/* Right Content */}
-      <div className="relative z-10 h-full flex items-center justify-end px-[120px]">
+      <div className="relative z-10 h-full flex items-center justify-center md:justify-end px-6 md:px-[120px]">
 
-        <div className="max-w-[520px]">
+        <div className="max-w-[320px] md:max-w-[520px] text-center md:text-left">
 
           {/* Logo */}
           <Image
@@ -29,11 +29,11 @@ export default function Hero() {
             alt="Logo"
             width={260}
             height={117}
-            className="mb-[24px]"
+            className="mb-[16px] md:mb-[24px] w-[180px] md:w-[260px]"
           />
 
           {/* Heading */}
-          <h2 className="text-[20px] font-semibold tracking-wide leading-[28px] mb-[20px]">
+          <h2 className="text-[16px] md:text-[20px] leading-[24px] md:leading-[28px] font-semibold mb-[16px] md:mb-[20px]">
             PRE-SAVE THE NEW ALBUM <br />
             FOR A CHANCE TO WIN!
           </h2>
@@ -41,11 +41,12 @@ export default function Hero() {
           {/* Car Image */}
           <div className="mb-[20px]">
             <Image
-              src="/images/car.png"
-              alt="Car"
-              width={260}
-              height={150}
-            />
+  src="/images/car.png"
+  alt="Car"
+  width={200}
+  height={120}
+  className="w-[180px] md:w-[260px]"
+/>
           </div>
 
           {/* Prize List */}
@@ -63,9 +64,9 @@ export default function Hero() {
           </p>
 
           {/* CTA Button */}
-          <button className="bg-black px-[28px] py-[12px] text-[14px] font-semibold tracking-widest hover:bg-gray-800 transition">
-            ENTER HERE
-          </button>
+          <button className="w-full md:w-auto bg-black px-[20px] md:px-[28px] py-[12px] text-[13px] md:text-[14px] font-semibold tracking-widest">
+  ENTER HERE
+</button>
 
         </div>
       </div>
